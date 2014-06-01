@@ -5,21 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Backbone Boilerplate</title>
+  <title>Gamla Posten - Nordkoster</title>
 
   <!-- Application styles. -->
-  <!-- build:[href] /styles.min.css -->
-  <link rel="stylesheet" href="/app/styles/index.css">
-  <!-- /build -->
+  <link rel="stylesheet" href="/styles.min.css">
 </head>
 
 <body>
   <!-- Application container. -->
-  <main role="main" id="main"></main>
+  <main role="main" id="main">
+  <div id="header"></div>
+  </main>
 
   <!-- Application source. -->
-  <!-- build:[src] /source.min.js -->
-  <script data-main="/app/main" src="/vendor/bower/requirejs/require.js"></script>
-  <!-- /build -->
+  <script data-main="/app/main" src="/source.min.js"></script>
+
+  <script type="text/template" id="header_template">
+    <h1>Gamla Posten</h1>
+    <h2>På Nordkoster</h2>
+    <input type="button" id="header_button" value="Book" />
+  </script>
+  
 </body>
 </html>
